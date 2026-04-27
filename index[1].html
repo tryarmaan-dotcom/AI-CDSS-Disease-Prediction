@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI-Based CDSS | Disease Prediction</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <h2>AI-CDSS</h2>
+      <a href="#about">About</a>
+      <a href="#predictor">Predictor</a>
+      <a href="#algorithm">Algorithm</a>
+    </nav>
+
+    <section class="hero">
+      <div>
+        <p class="tag">Healthcare + Artificial Intelligence</p>
+        <h1>AI-Based Clinical Decision Support System</h1>
+        <p>
+          A simple web-based project that predicts possible health conditions
+          based on selected symptoms and gives basic guidance.
+        </p>
+        <a class="btn" href="#predictor">Try Prediction</a>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section id="about" class="card">
+      <h2>About the Project</h2>
+      <p>
+        This project demonstrates how an AI-based Clinical Decision Support System
+        can support healthcare decision-making. The system takes symptoms as input
+        and predicts a possible disease category using a simple rule-based ML-style
+        decision logic inspired by Decision Tree classification.
+      </p>
+      <p class="note">
+        Note: This is an educational project and not a replacement for professional medical advice.
+      </p>
+    </section>
+
+    <section id="predictor" class="card">
+      <h2>Disease Prediction Tool</h2>
+      <p>Select the symptoms observed in the patient:</p>
+
+      <div class="symptom-grid">
+        <label><input type="checkbox" value="fever"> Fever</label>
+        <label><input type="checkbox" value="cough"> Cough</label>
+        <label><input type="checkbox" value="headache"> Headache</label>
+        <label><input type="checkbox" value="fatigue"> Fatigue</label>
+        <label><input type="checkbox" value="chest pain"> Chest Pain</label>
+        <label><input type="checkbox" value="breathlessness"> Breathlessness</label>
+        <label><input type="checkbox" value="thirst"> Excessive Thirst</label>
+        <label><input type="checkbox" value="urination"> Frequent Urination</label>
+        <label><input type="checkbox" value="stomach pain"> Stomach Pain</label>
+        <label><input type="checkbox" value="vomiting"> Vomiting</label>
+      </div>
+
+      <button onclick="predictDisease()">Predict Disease</button>
+
+      <div id="result" class="result">
+        Prediction will appear here.
+      </div>
+    </section>
+
+    <section id="algorithm" class="card">
+      <h2>ML Algorithm Used</h2>
+      <p>
+        The project uses a Decision Tree-inspired logic. A Decision Tree works by
+        checking conditions step-by-step and classifying the input into a possible
+        output class. In real healthcare projects, this can be trained using datasets
+        containing symptoms and disease labels.
+      </p>
+
+      <div class="steps">
+        <div>
+          <h3>1. Data Input</h3>
+          <p>User selects symptoms.</p>
+        </div>
+        <div>
+          <h3>2. Processing</h3>
+          <p>System compares symptoms with disease patterns.</p>
+        </div>
+        <div>
+          <h3>3. Prediction</h3>
+          <p>Possible condition and basic recommendation is displayed.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Conclusion</h2>
+      <p>
+        AI-based CDSS can help doctors and healthcare workers by giving quick
+        decision support, reducing delay, and improving early screening. However,
+        patient safety, data privacy, and doctor supervision are very important.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created by Armaan Patel | AI-Based CDSS Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

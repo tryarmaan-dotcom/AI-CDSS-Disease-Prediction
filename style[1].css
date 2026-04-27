@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f8fb;
+  color: #1f2937;
+  line-height: 1.6;
+}
+
+header {
+  background: linear-gradient(135deg, #0f766e, #2563eb);
+  color: white;
+  padding-bottom: 70px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 8%;
+}
+
+nav h2 {
+  font-size: 26px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 18px;
+  font-weight: bold;
+}
+
+.hero {
+  padding: 70px 8% 20px;
+  max-width: 850px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin: 10px 0;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.tag {
+  background: rgba(255, 255, 255, 0.2);
+  display: inline-block;
+  padding: 7px 14px;
+  border-radius: 20px;
+}
+
+.btn, button {
+  background: #ffffff;
+  color: #0f766e;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+main {
+  width: 84%;
+  margin: -40px auto 40px;
+}
+
+.card {
+  background: white;
+  margin-bottom: 25px;
+  padding: 28px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+  color: #0f766e;
+  margin-bottom: 12px;
+}
+
+.note {
+  background: #fff7ed;
+  border-left: 4px solid #f97316;
+  padding: 12px;
+  margin-top: 15px;
+  border-radius: 6px;
+}
+
+.symptom-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 12px;
+  margin: 18px 0;
+}
+
+.symptom-grid label {
+  background: #eef6ff;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+button {
+  background: #0f766e;
+  color: white;
+  margin-top: 8px;
+}
+
+.result {
+  margin-top: 20px;
+  background: #ecfeff;
+  padding: 18px;
+  border-radius: 10px;
+  border-left: 5px solid #0891b2;
+  font-weight: bold;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.steps div {
+  background: #f1f5f9;
+  padding: 18px;
+  border-radius: 12px;
+}
+
+footer {
+  text-align: center;
+  padding: 22px;
+  background: #0f172a;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  main {
+    width: 92%;
+  }
+}
